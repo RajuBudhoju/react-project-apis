@@ -27,3 +27,57 @@ button:active {
   background-color: #460897;
   border-color: #460897;
 }
+
+/* Existing styles */
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgb(7, 7, 7)a0a;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form button {
+  font: inherit;
+  cursor: pointer;
+  background: #230052;
+  border: 1px solid #230052;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 20px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+form button:focus {
+  outline: none;
+}
+
+form button:hover,
+form button:active {
+  background-color: #460897;
+  border-color: #460897;
+}
+
+/* Additional styles for responsiveness */
+
+@media (max-width: 600px) {
+  form {
+    width: 90%;
+  }
+}
+
